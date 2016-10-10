@@ -1,0 +1,16 @@
+# NPM logs
+npm-debug.log
+
+# Node modules
+node_modules
+
+#Ide stuff
+.idea/*
+
+# Python bytecode:
+*.py[co]
+*.pyc
+
+# SQLite3 database files:
+*.db
+*.sqlite3
