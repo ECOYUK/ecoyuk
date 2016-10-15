@@ -14,3 +14,6 @@ node_modules
 # SQLite3 database files:
 *.db
 *.sqlite3
+
+#Static files
+theapp/static/

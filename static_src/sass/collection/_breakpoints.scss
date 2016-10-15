@@ -1,0 +1,12 @@
+$responsive-breakpoints: (
+    mobile-small: 480px,
+    mobile: 680px,
+    tablet-small: 769px,
+    tablet: 1025px,
+    desktop: 1280px,
+    desktop-big: 1600px,
+    desktop-huge: 2000px
+);
+
+$responsive: true;
+$container-fixed-width: null;

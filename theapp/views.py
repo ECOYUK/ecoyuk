@@ -7,11 +7,9 @@ class HelloBrehs(TemplateView):
     template_name = "templates/mdhomepage.html"
 
 
+class About(TemplateView):
+    template_name = "templates/aboutpage.html"
 
 
-
-
-
-
-
-
+class Contact(TemplateView):
+    template_name = "templates/contactpage.html"

@@ -1,0 +1,53 @@
+.container {
+	padding: $double-spacing;
+}
+
+.container-30 {
+	min-height: 30vmin; 
+}
+
+.container-40 {
+	min-height: 40vmin; 
+}
+
+.container-60 {
+	min-height: 60vmin; 
+}
+
+
+.image-container {
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.border {
+	border: 1px solid;
+}
+
+// @media screen and (min-width: 770px) {
+	.parrallax-inner{
+		background-attachment: fixed !important;
+	}
+// }
+
+.parrallax-container{
+	width: 100%;
+}
+
+	.parrallax-inner{
+		height: 40vmin;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 70%;
+	}
+	.parrallax--one{
+		background-image: url(/static/img/bike.jpg);
+	}
+
+	.parrallax--two{
+		background-image: url(/static/img/bike.jpg);
+		background-position: center 30%;
+	}

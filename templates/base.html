@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="cleartype" content="on">
+        <meta name="HandheldFriendly" content="True">
+		<title>Ecoyuk | {% block page_title %}{% endblock %} </title>
+		<meta name="description" content="The organisation belongs to Equitorian Youth, and shall remain an entity first and foremost for the bringing together of Equitorians, for the benefit of Equitoria and then ultimately South Sudan.">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+		<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+	</head>
+
+	<body class="body">
+	
+	{% block site_header %}
+            {% include 'includes/header.html'%}
+    {% endblock %}
+
+    {% block content %}
+	{% endblock %}
+	
+	{% block site_footer %}
+            {% include 'includes/site_footer.html'%}
+    {% endblock %}
+	
+	<script src="{% static 'js/main.js' %}"></script>
+	</body>
+</html>
