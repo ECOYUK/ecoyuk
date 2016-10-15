@@ -5,6 +5,7 @@
 }
 
 	.header__container {
+		@include inuit-clearfix();
 		padding: $double-spacing $double-spacing 0 $double-spacing;
 		position: relative;
 	}
@@ -38,7 +39,8 @@
 		}
 		
 		.header__link:hover:after,
-		.header__link:active:after {
+		.header__link:active:after,
+		.header__link--active:after {
 			border-bottom: 4px solid $color-primary;
 			bottom: 0;
 			content: '';

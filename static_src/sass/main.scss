@@ -3,6 +3,7 @@
 @import 'vendor/mq';
 @import 'vendor/inuit.settings';
 @import 'vendor/tools.functions';
+@import 'vendor/tools.clearfix';
 
 @import 'vendor/utilities.spacing';
 @import 'vendor/utilities.widths';
@@ -10,6 +11,7 @@
 
 @import "collection/normalize";
 @import "collection/settings";
+@import "collection/helpers";
 
 @import "collection/header";
 @import "collection/containers";
