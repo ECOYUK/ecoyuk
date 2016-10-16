@@ -11,6 +11,8 @@ var paths = {
     cssSrc: './static_src/sass/',
     images: './theapp/static/img/',
     imagesSrc: './static_src/img/',
+    fonts: './theapp/static/fonts/',
+    fontsSrc: './static_src/fonts/',
     js: './theapp/static/js/',
     jsSrc: './static_src/js/',
 };
@@ -47,6 +49,10 @@ gulp.task('move-images', () => {
         .pipe(gulp.dest(paths.images));
 });
 
+gulp.task('move-fonts', () => {
+    return gulp.src(`${paths.fontsSrc}**/*`)
+        .pipe(gulp.dest(paths.fonts));
+});
 
 gulp.task('watch', function () {
   gulp.watch(`${paths.cssSrc}/**/*.scss`, ['sass']);
@@ -55,6 +61,6 @@ gulp.task('watch', function () {
 
 
 gulp.task('deploy', function () {
-    run('sass', 'move-images','js')
+    run('sass', 'move-images','js', 'move-fonts')
 });
 

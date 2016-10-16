@@ -1,3 +1,4 @@
+@import 'web-fonts';
 @import "collection/breakpoints";
 
 @import 'vendor/mq';
@@ -5,15 +6,18 @@
 @import 'vendor/tools.functions';
 @import 'vendor/tools.clearfix';
 
-@import 'vendor/utilities.spacing';
 @import 'vendor/utilities.widths';
 @import 'vendor/objects.layout';
+@import 'vendor/trumps.spacing';
+
 
 @import "collection/normalize";
 @import "collection/settings";
 @import "collection/helpers";
 
+@import "collection/themes";
+@import "collection/side-nav";
 @import "collection/header";
+@import "collection/banner";
 @import "collection/containers";
-
 

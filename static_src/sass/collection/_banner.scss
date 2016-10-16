@@ -1,0 +1,21 @@
+.banner {
+	display: block;
+	position: relative;
+}
+		
+	.banner__image {
+		background-color: $color-grey;
+		background-position: center center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    filter: brightness(85%);
+	    height: 100%;
+	    width: 100%;
+	}
+
+	.banner__text {
+		color: $color-white;
+		left: $base-spacing;
+		position: absolute;
+		bottom: 2em;
+	}

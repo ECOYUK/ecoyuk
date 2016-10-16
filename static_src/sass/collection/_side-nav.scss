@@ -1,0 +1,19 @@
+.side-nav {
+	list-style: none;
+	padding: 0;
+}
+
+.side-nav__link {
+	display: block;
+}
+
+
+@media (max-width: 769px) {
+    .side-nav__link {
+		display: inline-block;
+    }
+
+    .side-nav__link + .side-nav__link {
+    	padding-left: $base-spacing; 
+    }
+}

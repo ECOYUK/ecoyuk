@@ -6,8 +6,8 @@
     font-style: italic;
 }
 
-.align-right {
-	text-align: right;
+.align-center {
+	text-align: center;
 }
 
 .float-right {
@@ -22,7 +22,19 @@
 	overflow: scroll;
 }
 
-.list-plain {
-	list-style: none;
-	padding: 0;
+
+.hide {
+	display: none;
+}
+
+.block {
+	display: block;
+}
+
+.divider-top {
+	border-top: 5px solid $color-green;
+}
+
+.bg--grey {
+	background-color: $color-grey;
 }

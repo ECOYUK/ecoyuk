@@ -1,11 +1,12 @@
+{% load static %}
 <header class="header">
-	<div class="header__container">
-		<div class="float-right">
-			<a href="/" class="header__link">Home</a><!--
+	<div class="header__container"><!--
+			--><a href="/" class="header-logo"><img src="{% static 'img/ecoyuk-logo.jpg' %}" class="header__logo-img" alt="Logo"></a><!--
 			--><a href="/about" class="header__link">About</a><!--
 			--><a href="/news" class="header__link">News</a><!--
 			--><a href="/contact" class="header__link">Contact</a><!--
-			--><a href="" class="header__link--button">Donate</a>
-		</div>
-	</div>
+			--><a href="" class=" header__link float-right header__link--button">Donate</a><!--
+	--></div>
 </header>
+
+{# include 'includes/svgs/ecoyuk-logo.svg'#}

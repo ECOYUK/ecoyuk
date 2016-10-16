@@ -91,3 +91,40 @@ $inuit-global-spacing-unit-tiny:  round($inuit-global-spacing-unit * $inuit-glob
 $inuit-global-spacing-unit-small: round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-small);
 $inuit-global-spacing-unit-large: round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-large);
 $inuit-global-spacing-unit-huge:  round($inuit-global-spacing-unit * $inuit-global-spacing-unit-factor-huge);
+
+
+// Inuit namespace for trumps.spacing
+$inuit-namespace:               null !default;
+$inuit-base-spacing-unit:       24px !default;
+
+
+/**
+ * Trumps / Spacing
+ */
+$inuit-enable-margins: true;
+$inuit-enable-margins--none: true;
+$inuit-enable-margins--negative: true;
+$inuit-enable-margins--negative-small: true;
+$inuit-enable-margins--tiny: true;
+$inuit-enable-margins--small: true;
+$inuit-enable-margins--large: true;
+$inuit-enable-margins--huge : true;
+$inuit-enable-responsive-margins--none: true;   
+$inuit-enable-responsive-margins: true;
+$inuit-enable-responsive-margins--tiny: true;
+$inuit-enable-responsive-margins--small: true;
+$inuit-enable-responsive-margins--large: true;
+$inuit-enable-responsive-margins--huge: true;
+
+$inuit-enable-paddings: true;
+$inuit-enable-paddings--none: true;
+$inuit-enable-paddings--small: true;
+$inuit-enable-paddings--tiny: true;
+$inuit-enable-paddings--large: true;
+$inuit-enable-paddings--huge: true;
+$inuit-enable-responsive-paddings: true;
+$inuit-enable-responsive-paddings--none: true;
+$inuit-enable-responsive-paddings--tiny: true;
+$inuit-enable-responsive-paddings--small: true;
+$inuit-enable-responsive-paddings--large: true;
+$inuit-enable-responsive-paddings--huge: true;

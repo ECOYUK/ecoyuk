@@ -15,6 +15,14 @@
 }
 
 	.container-min-50 {
+		min-height: 50vmin; 
+	}
+
+.container-60 {
+	height: 60vmin;
+}
+
+	.container-min-60 {
 		min-height: 60vmin; 
 	}
 
@@ -36,7 +44,7 @@
      * 1. TODO: Remove parallax on mobile [1]
      */
 	.parrallax-inner{
-		height: 40vmin;
+		height: 50vmin;
 		background-attachment: fixed !important; /* [1] */
 		background-size: cover;
 		background-repeat: no-repeat;

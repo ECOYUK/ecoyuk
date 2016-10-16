@@ -6,36 +6,39 @@
 
 	.header__container {
 		@include inuit-clearfix();
-		padding: $double-spacing $double-spacing 0 $double-spacing;
+		height: 4em;
 		position: relative;
 	}
+		.header-logo {
+			display: inline-block;
+			height: 100%;
+			vertical-align: top;
+		}
+		
+		.header-logo {
+			.svg-icon {
+				display: block;
+			}
+		}
+
+		.header__logo-img {
+			display: block;
+			height: 100%;
+		}
 
 		.header__link {
 			display: inline-block;
-			font-size: 20px;
-			font-weight: 400;
-			padding: $base-spacing;
+		    padding: 1.5em 1em;
+			vertical-align: top;
+			line-height: 1;
 			position: relative;
 		}
 
 		.header__link--button {
-			background-color: $color-primary;
+			background-color: $color-secondary;
 			color: $color-white;
-			display: inline-block;
-			font-size: 20px;
-			font-weight: 400;
-			padding: $base-spacing;
-			position: relative;
-		}
-
-		.header__link + .header__link:before {
-			border-left: 1px solid;
-			content: '';
-			height: 60%;
-		    left: -$base-spacing;
-		    position: relative;
-		    top: 20%;
-		    z-index: 5;
+			margin: 0.5em;
+			padding: 1em 1.5em;
 		}
 		
 		.header__link:hover:after,
@@ -44,9 +47,9 @@
 			border-bottom: 4px solid $color-primary;
 			bottom: 0;
 			content: '';
-			left: 0;
+			left: 20%;
 			position: absolute;
-			width: 100%;
+			width: 60%;
 		}
 
 		.header__link--button:hover:after,
@@ -54,7 +57,7 @@
 			border-bottom: 4px solid $color-white;
 			bottom: 0;
 			content: '';
-			left: 0;
+			left: 20%;
 			position: absolute;
-			width: 100%;
+			width: 60%;
 		}
