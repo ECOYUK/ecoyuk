@@ -2,17 +2,21 @@
 	padding: $double-spacing;
 }
 
-.container-30 {
-	min-height: 30vmin; 
-}
-
 .container-40 {
-	min-height: 40vmin; 
+	height: 40vmin;
 }
 
-.container-60 {
-	min-height: 60vmin; 
+	.container-min-40 {
+		min-height: 40vmin; 
+	}
+
+.container-50 {
+	height: 50vmin;
 }
+
+	.container-min-50 {
+		min-height: 60vmin; 
+	}
 
 
 .image-container {
