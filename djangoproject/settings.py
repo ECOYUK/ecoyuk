@@ -9,8 +9,24 @@ https://docs.djangoproject.com/en/1.9/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
-
 import os
+
+from os import environ
+
+from django.core.exceptions import ImproperlyConfigured
+
+def _get_env_variable(var_name, default=None):
+    """
+    Get the environment variable or return exception."""
+    try:
+        return environ[var_name]
+    except KeyError:
+        if default:
+            return default
+        else:
+            error_msg = "Set the %s env variable" % var_name
+            raise ImproperlyConfigured(error_msg)
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,7 +53,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'theapp'
+    'theapp',
+    'ckeditor',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -124,5 +141,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 STATIC_URL = '/static/'
+
+AWS_STORAGE_BUCKET_NAME = _get_env_variable(
+        'AWS_STORAGE_BUCKET_NAME', default='cfgplaytest')
+
+AWS_ACCESS_KEY_ID = _get_env_variable(
+        'AWS_ACCESS_KEY_ID', default='changeme')
+
+AWS_SECRET_ACCESS_KEY = _get_env_variable(
+        'AWS_SECRET_ACCESS_KEY', default='changeme')
+
+
+MEDIA_URL = "https://s3-eu-west-1.amazonaws.com/"
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+AWS_QUERYSTRING_AUTH = False
 
 

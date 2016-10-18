@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^$', HelloBrehs.as_view(), name="one"),
     url(r'^about/', About.as_view(), name="about"),
     url(r'^contact/', Contact.as_view(), name="contact"),
+    url(r'^news/', InfoListView.as_view(), name="news"),
+    url(r'^news-page/(?P<pk>\d+)/$', InfoDetailView.as_view(), name="news-page"),
 ]

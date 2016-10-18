@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_title %}{{ object.title }}{% endblock %}
+
+{%  block content %}
+    <div class="container">
+        <h2>{{ object.title }}</h2>
+        <div class="rich-text">{{ object.rich_text|removetags:""|safe }}</div>
+    </div>
+{% endblock %}

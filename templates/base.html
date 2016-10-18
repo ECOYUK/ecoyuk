@@ -11,22 +11,21 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
 		<link rel="stylesheet" href="{% static 'css/main.css' %}">
-
 	</head>
 
 	<body class="body">
-	
+
 	{% block site_header %}
-            {% include 'includes/header.html'%}
+        {% include 'includes/header.html' %}
     {% endblock %}
 
     {% block content %}
 	{% endblock %}
-	
+
 	{% block site_footer %}
-            {% include 'includes/site_footer.html'%}
+        {% include 'includes/site_footer.html'%}
     {% endblock %}
-	
+
 	<script src="{% static 'js/main.js' %}"></script>
 	</body>
 </html>
